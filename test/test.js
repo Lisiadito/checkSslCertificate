@@ -5,23 +5,23 @@ describe('checkSslCertificate', function() {
   it('should resolve when passing only a hostname', async () => {
     const result = await checkSslCertificate({hostname: 'github.com'})
     expect(result).to.be.a('Object')
-    expect(result).to.have.property('obj')
+    expect(result).to.have.property('originalObject')
     expect(result).to.have.property('valid', true)
     expect(result).to.have.property('validFrom')
     expect(result).to.have.property('validUntil')
-    expect(result.obj).to.have.property('hostname')
-    expect(result.obj.hostname).to.equal('github.com')
+    expect(result.originalObject).to.have.property('hostname')
+    expect(result.originalObject.hostname).to.equal('github.com')
   })
 
   it('should resolve when passing a different method', async () => {
     const result = await checkSslCertificate({hostname: 'github.com', method: 'GET'})
     expect(result).to.be.a('Object')
-    expect(result).to.have.property('obj')
+    expect(result).to.have.property('originalObject')
     expect(result).to.have.property('valid', true)
     expect(result).to.have.property('validFrom')
     expect(result).to.have.property('validUntil')
-    expect(result.obj).to.have.property('hostname')
-    expect(result.obj.hostname).to.equal('github.com')
+    expect(result.originalObject).to.have.property('hostname')
+    expect(result.originalObject.hostname).to.equal('github.com')
   })
 
   it('should resolve with an error when empty hostname is passed', async () => {
