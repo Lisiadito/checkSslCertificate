@@ -1,6 +1,6 @@
 import * as https from 'https'
 import { TLSSocket } from 'tls'
-import * as yargs from 'yargs'
+import yargs from 'yargs'
 
 export interface UrlObject {
     hostname: string
@@ -66,13 +66,13 @@ if(runningAsScript) {
             alias: 'h'
         })
         .option('method', {
-            description: 'E.g. "GET" or "HEAD"',
+            description: 'E.g. GET or HEAD',
             default: 'HEAD',
             alias: 'm'
         })
         .option('path', {
             type: 'string',
-            description: 'E.g. "/foo"',
+            description: 'E.g. /foo',
             default: ''
         })
         .option('port', {
