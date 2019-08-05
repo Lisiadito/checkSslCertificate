@@ -7,7 +7,6 @@
   "scripts": {
     "build": "tsc",
     "test": "mocha",
-    "publish": "mocha"
   },
   "dependencies": {},
   "devDependencies": {
