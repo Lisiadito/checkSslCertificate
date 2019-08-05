@@ -33,6 +33,13 @@ describe('checkSslCertificate', function() {
   it('should resolve with an error when path is contained in the hostname', async () => {
     const result = await checkSslCertificate({hostname: 'github.com/foo'})
     expect(result).to.have.property('error')
+    expect(result.error).to.equal('No trailing slashes or path in the hostname. Use path property instead.')
+  })
+
+  it('should resolve with an error when hostname ends with an slash', async () => {
+    const result = await checkSslCertificate({hostname: 'github.com/'})
+    expect(result).to.have.property('error')
+    expect(result.error).to.equal('No trailing slashes or path in the hostname. Use path property instead.')
   })
 
   it('should resolve with an error when response code not 200', async () => {

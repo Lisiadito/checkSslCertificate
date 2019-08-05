@@ -22,6 +22,10 @@ export default function checkSslCertificate(obj: UrlObject): Promise<SslCheckRes
             resolve({error:'Host missing', originalObject: obj, valid: false})
         }
 
+        if(obj.hostname.slice(-1) === '/' || obj.hostname.match(/(?<!\?.+)(?<=\/)[\w-]+(?=[/\r\n?]|$)/)) {
+            resolve({error:'No trailing slashes or path in the hostname. Use path property instead.', originalObject: obj, valid: false})
+        }
+
         const options = {
             hostname: obj.hostname,
             path: obj.path || '',
