@@ -1,0 +1,19 @@
+{
+  "name": "ssl-checker",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha",
+    "publish": "mocha"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.6.9",
+    "chai": "^4.2.0",
+    "mocha": "6.2.0",
+    "typescript": "^3.5.3"
+  }
+}
