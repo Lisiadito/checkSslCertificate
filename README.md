@@ -20,6 +20,8 @@ $ yarn add checkSslCertificate
 ## Usage
 ```js
 import checkSslCertificate from 'checkSslCertificate'
+// or 
+// const checkSslCertificate = require('checkSslCertificate').default
 
 checkSslCertificate({hostname: 'github.com'}).then(res => {
    console.log(res)
@@ -27,7 +29,7 @@ checkSslCertificate({hostname: 'github.com'}).then(res => {
 ```
 or from command line
 ```bash
-checkSslCertificate -h example.com 
+checksslcertificate -h example.com 
 ```
 
 ## Options

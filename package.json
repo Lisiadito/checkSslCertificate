@@ -14,6 +14,7 @@
     "node": "^10.15.0",
     "yarn": "^1.15.2"
   },
+  "bin" : { "checksslcertificate" : "./dist/index.js" } ,
   "main": "dist/index.js",
   "files": [
     "dist/**/*"
