@@ -1,6 +1,19 @@
 {
-  "name": "ssl-checker",
+  "name": "checksslcertificate",
   "version": "1.0.0",
+  "author": {
+    "name": "Patrick Weingärtner",
+    "email": "patrick.weingaertner91@gmail.com"
+  },
+  "homepage": "https://github.com/Lisiadito/checkSslCertificate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lisiadito/checkSslCertificate.git"
+  },
+  "engines": {
+    "node": "^10.15.0",
+    "yarn": "^1.15.2"
+  },
   "main": "dist/index.js",
   "files": [
     "dist/**/*"
@@ -25,5 +38,13 @@
     "mocha": "6.2.0",
     "prettier": "1.18.2",
     "typescript": "^3.5.3"
-  }
+  },
+  "keywords": [
+    "ssl",
+    "typescript",
+    "cli",
+    "check",
+    "tls",
+    "node"
+  ]
 }
