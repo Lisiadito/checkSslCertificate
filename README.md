@@ -1,3 +1,4 @@
+![npm](https://img.shields.io/npm/v/checksslcertificate)
 # checkSslCertificate
 
 A module which allows you to check the certificate of a given hostname is valid.
