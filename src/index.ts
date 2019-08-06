@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import * as https from 'https'
 import { TLSSocket } from 'tls'
 import yargs from 'yargs'
