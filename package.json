@@ -1,6 +1,6 @@
 {
   "name": "checksslcertificate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Patrick Weingärtner",
     "email": "patrick.weingaertner91@gmail.com"
@@ -14,7 +14,9 @@
     "node": "^10.15.0",
     "yarn": "^1.15.2"
   },
-  "bin" : { "checksslcertificate" : "./dist/index.js" } ,
+  "bin": {
+    "checksslcertificate": "./dist/index.js"
+  },
   "main": "dist/index.js",
   "files": [
     "dist/**/*"
