@@ -50,5 +50,5 @@
     "tls",
     "node"
   ],
-  "description": "A tool to check if ssl certifitcate of given hostname is valid"
+  "description": "A tool to check if the ssl certificate of given hostname is valid"
 }
