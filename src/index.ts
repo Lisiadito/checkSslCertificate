@@ -71,7 +71,8 @@ if (runningAsScript) {
         .help('help')
         .option('hostname', {
             type: 'string',
-            alias: 'h'
+            alias: 'h',
+            demandOption: true
         })
         .option('method', {
             description: 'E.g. GET or HEAD',
