@@ -1,4 +1,4 @@
-![npm](https://img.shields.io/npm/v/checksslcertificate)
+[![NPM version][https://img.shields.io/npm/v/checksslcertificate]][https://www.npmjs.com/package/checksslcertificate]
 # checkSslCertificate
 
 A module which allows you to check the certificate of a given hostname is valid.
@@ -16,6 +16,12 @@ To install this package run:
 $ npm install checkSslCertificate --save 
 # Or
 $ yarn add checkSslCertificate
+```
+For the usage via CLI it is recommended to install the package globally.
+```bash
+$ npm install -g checkSslCertificate
+# Or
+$ yarn global add checkSslCertificate
 ```
 
 ## Usage
