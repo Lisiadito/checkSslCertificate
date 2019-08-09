@@ -1,4 +1,4 @@
-[![NPM version][https://img.shields.io/npm/v/checksslcertificate]][https://www.npmjs.com/package/checksslcertificate]
+[![npm version](https://img.shields.io/npm/v/checksslcertificate.svg?style=flat)](https://npmjs.org/package/checksslcertificate "View this project on npm")
 # checkSslCertificate
 
 A module which allows you to check the certificate of a given hostname is valid.
