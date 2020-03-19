@@ -32,14 +32,14 @@
     "preversion": "yarn pretty"
   },
   "dependencies": {
-    "@types/yargs": "^13.0.2",
-    "yargs": "^13.3.0"
+    "yargs": "^15.3.1"
   },
   "devDependencies": {
-    "@types/node": "^12.6.9",
+    "@types/node": "^13.9.2",
+    "@types/yargs": "^15.0.4",
     "chai": "^4.2.0",
-    "mocha": "6.2.0",
-    "prettier": "1.18.2",
+    "mocha": "7.1.1",
+    "prettier": "1.19.1",
     "typescript": "^3.5.3"
   },
   "keywords": [
